@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="main">
+        <!-- <div class="header">
+            <img src="./image/100_Home_01.gif" alt="">
+        </div> -->
+        <div class="header">          
+                <div>
+                    <img src="./image/logomain_01.gif" alt="">
+                </div>
+                <div class="header-banner" onclick="closeModel()" style="flex: 1;display: none;">
+                    <ul>
+                        <li class="active-banner">
+                            Home
+                        </li>
+                        <li>
+                            Welcome
+                        </li>
+                        <li>
+                            Information
+                        </li>
+                        <li>
+                            My ltinerary
+
+                        </li>
+                        <li>
+                            Technology
+                        </li>
+                        <li>
+                            Help Center
+                        </li>
+                    </ul>
+                </div>
+                <div class="fr per" >
+                    <span id="personBtn" onclick="login()" style="display: inline-block;height: 61px;cursor: pointer;">
+                        <img style="padding:0 10px;" src="./image/logoper.jpeg" alt="">
+                    </span>
+                    <span style="display: inline-block;">
+                        <img src="./image/logo-2.jpeg" alt="">
+                    </span>
+                    <!-- <img src="./image/101_SIGN-IN_06.gif" alt=""> -->
+                </div>
+                <div class="model">
+                    <img src="./image/model03_02.gif" onclick="signIn()" alt="">
+
+                </div>
+                <!-- <div class="model dis-row" style="padding: 20px 0px;display: none;"> -->
+                    <!-- <div style="width: 50%;padding: 0px 80px;border-right: 1px solid #ccc;">
+                        <div  class="dis-row">
+                            <div class="dis-col">
+                                <div>Login width account and password</div>
+                                <input type="text" placeholder="Username"> 
+                            </div>
+                            <div class="dis-col">
+                                <div>Mobile verification code login</div>
+                                <input type="text" placeholder="Password">
+                            </div>
+                            
+                        </div>
+                        <p class="tal" style="padding: 20px 0px;">
+                            By signing in,you agree to our Terms of Service.
+                        </p>
+                        <div onclick="signIn()" class="tac" style="width:144px;height:34px;line-height:34px;background-color: #0069b5;color: #fff;cursor: pointer;">
+                            Sign In
+                        </div>
+                    </div>
+                   
+                    <div style="width: 50%;padding: 50px 30px;" class="tal">
+                        Do you work for Intel ？Sign in here
+                    </div> -->
+                <!-- </div> -->
+        </div>
+        <div class="box">
+            <div onclick="closeModel()">
+                <img src="./image/100_Home_02.gif" alt="">
+            </div>
+            <div>
+                <img src="./image/100_Home_03.gif" alt="">
+            </div>
+          
+        </div>
+        <div class="disnone" id="li1">
+            <img src="./image/103_Welcome_02.gif" alt="">
+        </div>
+        <div class="disnone" id="li2">
+            <img src="./image/104_lnformation_02.gif" alt="">
+        </div>
+        <div class="disnone" id="li3">
+            <img src="./image/105_My-ltinerary_02.gif" alt="">
+        </div>
+        <div class="disnone" id="li4" onclick="goDetail()">
+            <img src="./image/106_Technology_02.gif" alt="">
+        </div>
+        <div class="disnone" id="li5">
+            <img src="./image/WechatIMG42.jpeg" alt="">
+        </div>
+        <div class="disnone" id="detail">
+            <img src="./image/WechatIMG60.jpeg" alt="">
+        </div>
+        <div>
+            <img src="./image/100_Home_04.gif" alt="">
+        </div>
+        
+
+    </div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script>
+    function goDetail(){
+        $('.box').hide()
+                $('#li1').hide()
+                $('#li2').hide()
+                $('#li3').hide()
+                $('#li4').hide()
+                $('#li5').hide()
+                $('#detail').show()
+                
+                $('.header-banner li').removeClass('active-banner')
+    }
+    function login(){
+        $('.model').show()
+        $('#personBtn').addClass('active')
+    }
+    function closeModel(){
+        $('.model').hide()
+        $('#personBtn').removeClass('active')
+    }
+    function signIn(){
+        $('.header-banner').show()
+        $('.model').hide()
+        $('#personBtn').removeClass('active')
+
+    }
+    $(function(){
+        $('.header-banner li').click(function(){
+            $(this).addClass('active-banner')
+            $(this).siblings().removeClass('active-banner')
+            console.log($(this).index())
+            var index = $(this).index()
+            
+            if(index == 0){
+                $('.box').show()
+                $('#li1').hide()
+                $('#li2').hide()
+                $('#li3').hide()
+                $('#li4').hide()
+                $('#li5').hide()
+            }
+            else if(index == 1){
+                $('.box').hide()
+                $('#li1').show()
+                $('#li2').hide()
+                $('#li3').hide()
+                $('#li4').hide()
+                $('#li5').hide()
+                
+            }else if(index == 2){
+                $('.box').hide()
+                $('#li1').hide()
+                $('#li2').show()
+                $('#li3').hide()
+                $('#li4').hide()
+                $('#li5').hide()
+
+            }else if(index == 3){
+                $('.box').hide()
+                $('#li1').hide()
+                $('#li2').hide()
+                $('#li3').show()
+                $('#li4').hide()
+                $('#li5').hide()
+
+            }else if(index == 4){
+                $('.box').hide()
+                $('#li1').hide()
+                $('#li2').hide()
+                $('#li3').hide()
+                $('#li4').show()
+                $('#li5').hide()
+
+            }else if(index == 5){
+                $('.box').hide()
+                $('#li1').hide()
+                $('#li2').hide()
+                $('#li3').hide()
+                $('#li4').hide()
+                $('#li5').show()
+
+            }
+        })
+    })
+</script>
+</html>
