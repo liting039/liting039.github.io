@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <title>Help Center</title>
+</head>
+<body>
+    <div class="main">
+        <div>
+            <img src="./image/helpcenter.jpeg" alt="">
+        </div>
+        <div class="footer">
+            <ul>
+                <li onclick="goHome()">
+                    <img src="./image/104_Technology_06_06.gif" alt="">
+                    <div>Welcome</div>
+                </li>
+                <li onclick="goPerson()">
+                    <img src="./image/101_Welcome_07.gif" alt="">
+                    <div>Information</div>
+
+                </li>
+                <li onclick="goMy()">
+                    <img src="./image/101_Welcome_17.gif" alt="">
+                    <div>My Itinerary</div>
+
+                </li>
+                <li onclick="goTech()">
+                    <img src="./image/101_Welcome_09.gif" alt="">
+                    <div>Technology</div>
+
+                </li>
+                <li onclick="goHelpCenter()">
+                    <img src="./image/106_Help-Center_04.gif" alt="">
+                    <div class="ft-ac">Help Center</div>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    function goTech(){
+        window.location.href = 'tech.html'
+    }
+    function goHome(){
+        window.location.href = 'welcome.html'
+    }
+    function goPerson(){
+        window.location.href = 'person.html'
+    }
+    function goMy(){
+        window.location.href = 'myltin.html'
+    }
+</script>
+</html>

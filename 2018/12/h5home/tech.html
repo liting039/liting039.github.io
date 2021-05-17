@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+
+    <title>Technology</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header-banner" style="height: 177px;">
+            <img id="techimg" src="./image/tech01.jpeg" alt="">
+            <img onclick="goBack()" id="detailimg" style="display: none;" src="./image/detail01.jpeg" alt="">
+        </div>
+        <div id="tech">
+            <div style="margin-top: 177px;margin-bottom: 150px;" onclick="goDetail()">
+                <img  src="./image/tech02.jpeg" alt="">
+            </div>
+            <!-- <div style="margin-bottom: 150px;" onclick="goDetail()">
+                <img src="./image/tech02.jpeg" alt="">
+            </div> -->
+            <div class="footer">
+                <ul>
+                    <li onclick="goHome()">
+                        <img src="./image/104_Technology_06_06.gif" alt="">
+                        <div>Welcome</div>
+                    </li>
+                    <li onclick="goPerson()">
+                        <img src="./image/101_Welcome_07.gif" alt="">
+                        <div>Information</div>
+    
+                    </li>
+                    <li onclick="goMy()">
+                        <img src="./image/101_Welcome_17.gif" alt="">
+                        <div>My Itinerary</div>
+    
+                    </li>
+                    <li >
+                        <img src="./image/104_Technology_06.gif" alt="">
+                        <div class="ft-ac">Technology</div>
+    
+                    </li>
+                    <li onclick="goHelpCenter()">
+                        <img src="./image/101_Welcome_11.gif" alt="">
+                        <div>Help Center</div>
+    
+                    </li>
+                </ul>
+            </div>
+        </div>
+       
+        <div  id="detail" style="display: none;margin-top: 177px;">
+            <img src="./image/detail02.jpeg" alt="">
+        </div>
+       
+    </div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script>
+    function goDetail(){
+       $('#tech').hide()
+       $('#detail').show()
+       $('#detailimg').show()
+       $('#techimg').hide()
+    }
+    function goBack(){
+        $('#tech').show()
+       $('#detail').hide()
+       $('#detailimg').hide()
+       $('#techimg').show()
+    }
+      function goHome(){
+        window.location.href = 'welcome.html'
+    }
+    function goPerson(){
+        window.location.href = 'person.html'
+    }
+    function goMy(){
+        window.location.href = 'myltin.html'
+    }
+    function goHelpCenter(){
+        window.location.href = 'helpcenter.html'
+    }
+</script>
+</html>

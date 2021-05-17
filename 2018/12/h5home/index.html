@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>h5</title>
+    <style>
+        body{
+            zoom: 0.4;
+-moz-transform: scale(1);
+-moz-transform-origin: 0 0;
+        }
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .w100{
+            width: 100%;
+        }
+        .main{
+            width: 750px;
+            margin:0 auto;
+            /* min-width: 750px;
+            width:100%; */
+            /* height:auto; */
+        }
+        .header-banner{
+            position: fixed;
+            top: 0px;
+
+        }
+        p{
+        /* padding: 20px; */
+        line-height: 30px;
+        font-size: 18px;
+        }
+        .sub-btn{
+            width: 432px;
+            height: 80px;
+            background-color: #0069b5;
+            color: #fff;
+            font-size: 20px;
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            margin-left: -216px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="main" style="">
+        <div class="header-banner" style="height: 177px;">
+            <img class="w100" style="height: 100%;" src="./image/100_Home-page_01.gif" alt="">
+        </div>
+        <div style="margin-top:177px;">
+            <img src="./image/index01.jpeg" alt="">
+        </div>
+        <!-- <div>
+            <img src="./image/100_Home-page_03.gif" alt="">
+        </div> -->
+        <!-- <div style="width: 100%;padding: 20px;position: relative;">
+            <p>&nbsp;&nbsp; hence,the best way to host this registration system is on Wechat Mini Program for Chinese speaking users,and Website for nonChinese speaking usersz</p>
+            <p>&nbsp;&nbsp; hence,the best way to host this registration system is on Wechat Mini Program for Chinese speaking users,and Website for nonChinese speaking usersz</p>
+            <p>&nbsp;&nbsp; hence,the best way to host this registration system is on Wechat Mini Program for Chinese speaking users,and Website for nonChinese speaking usersz</p>
+        </div> -->
+        <img src="./image/loginbtn.jpeg" class="sub-btn" onclick="goWelcome()"></img>
+
+    </div>
+    
+</body>
+<script src="./js/jquery.min.js"></script>
+<script>
+     function goWelcome(){
+            window.location.href = 'login.html'
+    }
+    // $(function(){
+       
+    // })
+</script>
+</html>

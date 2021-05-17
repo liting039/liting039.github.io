@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src=""></script>
+    <title>个人中心</title>
+    <style>
+        .logout{
+            background-color: #fff;
+            width: 750px;
+            height: 84px;
+            text-align: center;
+            line-height: 70px;
+            font-size: 24px;
+            border-bottom: 20px solid #eef5fe;;
+        }
+    </style>
+</head>
+<body>
+    <div class="main" style="background-color: #eef5fe;">
+        <div style="position: fixed;top:0px;">
+            <img src="./image/person01.jpeg" alt="">
+        </div>
+        <div style="margin-top: 450px;border-top: 10px solid #eef5fe;margin-bottom: 140px;">
+            <img src="./image/person02.jpeg" alt="">
+        </div>
+        <!-- <div class="logout" style="margin-bottom: 200px;margin-top: 10px;">
+            Log out
+        </div> -->
+        <div class="footer">
+            <ul>
+                <li onclick="goHome()">
+                    <img src="./image/104_Technology_06_06.gif" alt="">
+                    <div >Welcome</div>
+                </li>
+                <li onclick="goPerson()">
+                    <img src="./image/102_lnformation_03 2.gif" alt="">
+                    <div class="ft-ac">Information</div>
+
+                </li>
+                <li onclick="goMy()">
+                    <img src="./image/101_Welcome_17.gif" alt="">
+                    <div>My Itinerary</div>
+
+                </li>
+                <li onclick="goTech()">
+                    <img src="./image/101_Welcome_09.gif" alt="">
+                    <div>Technology</div>
+
+                </li>
+                <li onclick="goHelpCenter()">
+                    <img src="./image/101_Welcome_11.gif" alt="">
+                    <div>Help Center</div>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    function goHome(){
+        window.location.href = 'welcome.html'
+    }
+    function goMy(){
+        window.location.href = 'myltin.html'
+    }
+    function goTech(){
+        window.location.href = 'tech.html'
+    }
+    function goHelpCenter(){
+        window.location.href = 'helpcenter.html'
+    }
+</script>
+</html>
