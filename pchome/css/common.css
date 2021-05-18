@@ -15,6 +15,10 @@ body{
     position: fixed;
     top: 0px;
 } */
+.header-banner li img{
+    /* height: 100%!important; */
+    margin-top: 27px;
+}
 .main{
     width: 1200px;
     margin: 0 auto;
@@ -71,7 +75,7 @@ body{
     font-size: 20px;
 }
 .active{
-    border-bottom: 6px solid #00a8ff;
+    border-bottom: 5px solid #00a8ff;
 }
 .header-banner{
     padding: 0px 0px;
@@ -80,8 +84,8 @@ body{
     float: left;
     list-style: none;
     float: left;
-    line-height: 70px;
-    margin-left: 70px;
+    line-height: 80px;
+    margin-left: 41px;
     color: #0069b5;
     height: 70px;
     cursor: pointer;

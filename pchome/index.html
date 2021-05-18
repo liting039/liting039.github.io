@@ -19,24 +19,36 @@
                 </div>
                 <div class="header-banner" onclick="closeModel()" style="flex: 1;display: none;">
                     <ul>
-                        <li class="active-banner">
-                            Home
+                        <li >
+                            <!-- Home -->
+                            <img class="default" src="./image/1@2x.png" alt="">
+                            <img class="disnone actImg" src="./image/1-1@2x.png" alt="">
                         </li>
                         <li>
-                            Welcome
+                            <!-- Welcome -->
+                            <img class="disnone actImg" src="./image/2-1@2x.png" alt="">
+                            <img class=" default" src="./image/2@2x.png" alt="">
                         </li>
                         <li>
-                            Information
+                            <!-- Information -->
+                            <img class="disnone actImg" src="./image/3-1@2x.png" alt="">
+                            <img class="default" src="./image/3@2x.png" alt="">
                         </li>
                         <li>
-                            My ltinerary
+                            <!-- My ltinerary -->
+                            <img class="disnone actImg" src="./image/4-1@2x.png" alt="">
+                            <img class="default" src="./image/4@2x.png" alt="">
 
                         </li>
                         <li>
-                            Technology
+                            <!-- Technology -->
+                            <img class="disnone actImg" src="./image/5-1@2x.png" alt="">
+                            <img class="default" src="./image/5@2x.png" alt="">
                         </li>
                         <li>
-                            Help Center
+                            <!-- Help Center -->
+                            <img class="disnone actImg" src="./image/6-1@2x.png" alt="">
+                            <img class="default" src="./image/6@2x.png" alt="">
                         </li>
                     </ul>
                 </div>
@@ -142,12 +154,24 @@
     }
     $(function(){
         $('.header-banner li').click(function(){
-            $(this).addClass('active-banner')
-            $(this).siblings().removeClass('active-banner')
+            // $(this).addClass('active-banner')
+           
+            // $(this).siblings().removeClass('active-banner')
+            $(this).find('.actImg').show()
+            $(this).find('.default').hide()
+            $(this).siblings().find('.actImg').hide()
+            $(this).siblings().find('.default').show()
             console.log($(this).index())
             var index = $(this).index()
             
             if(index == 0){
+                // $('#li1 active').show()
+                // $('#li1 default').hide()
+                // $('#li2').hide()
+                // $('#li3').hide()
+                // $('#li4').hide()
+                // $('#li5').hide()
+                // $(this).html(' <img src="./image/home01_03.png" alt="">')
                 $('.box').show()
                 $('#li1').hide()
                 $('#li2').hide()
